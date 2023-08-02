@@ -7,7 +7,7 @@ def calc_coords(landmarks, pivot, angle):
   face_line_length = calc_distance(face_line)
   eye_line_length = calc_distance(eye_line)
   max_length = max(face_line_length, eye_line_length)
-  bbox_size = int(max_length / .30)
+  bbox_size = int(max_length / .5)
   bbox_offset_x = int(bbox_size / 2)
   bbox_offset_y = int(bbox_size * .55)
   coords = [(0-bbox_offset_x,0-bbox_offset_y),(bbox_size-bbox_offset_x,0-bbox_offset_y),(bbox_size-bbox_offset_x,bbox_size-bbox_offset_y),(0-bbox_offset_x,bbox_size-bbox_offset_y)]
