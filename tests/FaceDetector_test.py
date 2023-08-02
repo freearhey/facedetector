@@ -4,7 +4,7 @@ import json
 import unittest
 sys.path.append('...')
 
-from src import FaceDetector
+from facedetector import FaceDetector
 
 class FaceDetectorTest(unittest.TestCase):
 	def test_detect_faces(self) -> None:
